@@ -279,6 +279,7 @@ A Inteligência Artificial permite que bancos analisem grandes volumes de dados,
 
 ---
 
+
 ## Detecção de fraudes
 
 A IA analisa transações financeiras em tempo real e identifica comportamentos fora do padrão.
@@ -314,6 +315,41 @@ A Inteligência Artificial auxilia equipes de segurança na identificação de a
 A IA pode ser utilizada para avaliar riscos financeiros, analisar perfis de clientes e auxiliar instituições na tomada de decisões mais seguras.
 
 ---
+
+
+---
+
+# Conteúdo Avançado do Miniguia (Requisitos DIO Nota 10)
+
+## Glossário de Conceitos Chave
+- **Deep Learning (Aprendizado Profundo):** Subcampo do machine learning baseado em redes neurais artificiais de múltiplas camadas, essencial para processar fluxos massivos de Big Data transacional em tempo real.
+- **Liveness Detection (Prova de Vida):** Tecnologia biométrica facial que impede fraudes de identidade usando fotos ou vídeos dinâmicos, exigindo micro-movimentos faciais reais do usuário.
+- **Edge Computing (Computação de Borda):** Processamento de dados e algoritmos mais próximos da origem (como no próprio celular do cliente), reduzindo a latência operacional e melhorando o tempo de resposta a fraudes.
+- **Ataques Adversariais:** Técnicas maliciosas que tentam burlar ou confundir modelos de IA inserindo dados de entrada sutilmente modificados para gerar classificações incorretas.
+- **Injeção de Prompt (Prompt Injection):** Vulnerabilidade em que criminosos inserem comandos ocultos ou maliciosos em assistentes baseados em LLMs, tentando forçar a IA a ignorar suas regras de segurança originais.
+
+---
+
+## Engenharia de Prompts: Diagnósticos e "Cicatrizes" (Troubleshooting)
+Durante o desenvolvimento no NotebookLM, foram documentados os seguintes desafios enfrentados na busca pela melhor qualidade de resposta técnica:
+
+| Prompt Inicial Tentado | Problema Identificado (Cicatriz) | Ajuste de Engenharia de Prompt Aplicado |
+| :--- | :--- | :--- |
+| *"Como os bancos evitam fraudes com IA?"* | A resposta veio genérica, focando apenas em cartões de crédito antigos e sem citar transações instantâneas como o Pix. | **Refatoração com Contexto:** *"Analise a detecção de fraudes considerando score de risco em tempo real, transações instantâneas e arquiteturas de edge computing."* |
+| *"A biometria é segura para o cliente?"* | A IA focou em debates superficiais de privacidade e não explicou como os dados sensíveis são protegidos contra vazamento de servidores. | **Refatoração Técnica:** *"Explique os mecanismos de resistência a ataques de identidade e os benefícios de privacidade ao utilizar IA descentralizada local no dispositivo."* |
+| *(Falta de embasamento normativo)* | O NotebookLM misturou conceitos gerais de mercado sem alinhar as respostas às regulamentações reais que governam o ecossistema bancário. | **Inclusão de Entidades de Controle:** Forçamos o modelo a cruzar as respostas com as diretrizes específicas do *NIST AI RMF*, *OWASP Top 10* e as normas do *Banco Central do Brasil*. |
+
+---
+
+##  Prompts Reutilizáveis para Revisões Futuras
+Insira estes prompts estruturados no seu NotebookLM sempre que precisar revisar ou atualizar a sua base de dados do projeto:
+
+1. **Prompt para Auditoria de Fraudes:**
+   > *"Com base nas fontes técnicas fornecidas (IBM e Banco Central), elabore uma tabela comparativa listando as diferenças práticas entre sistemas de segurança baseados em regras estáticas tradicionais e modelos preditivos de Deep Learning. Foque na eficiência de tempo e na taxa de falsos positivos."*
+
+2. **Prompt para Avaliação de Vulnerabilidade de IA:**
+   > *"Considerando o framework da OWASP e as diretrizes do NIST AI RMF, quais são as principais salvaguardas que uma instituição financeira deve implementar para proteger seus assistentes de IA contra ataques de engenharia social, injeção de prompts e envenenamento de dados?"*
+
 
 # Ferramentas utilizadas
 
