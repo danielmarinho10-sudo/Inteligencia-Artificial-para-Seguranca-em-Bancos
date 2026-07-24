@@ -369,6 +369,13 @@ O uso do NotebookLM auxiliou na organização das fontes e na criação de um gu
 
 ---
 
+
+## 📄 Prompt Engineering
+
+Este repositório também contém um exemplo de engenharia de prompt voltado para análise de feedbacks de clientes bancários com foco em segurança da informação e prevenção a fraudes.
+
+- [Prompt para análise de feedbacks](./prompt-feedback-seguranca-bancos.md)
+
 # Autor
 
 **Daniel Marinho**
